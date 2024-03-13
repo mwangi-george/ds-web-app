@@ -23,7 +23,7 @@ function Form(){
     console.log("field is " + name + " and value is " + value);
 
     // maintain the structure of the state
-    setForm({...form, [name]: value})
+    setForm({...form, [name]: value});
 
   }
   

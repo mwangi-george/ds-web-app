@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import { User, SecondUser, ThirdUser } from './User';
+// import { User, SecondUser, ThirdUser } from './User';
 import Form from './Form';
+import Data from './Data';
 
 const ClickMe = () => {
   console.log("I got clicked")
@@ -24,14 +25,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React here
-        </a>
+        <Data />
         <Form />
         {/* <User name = {name} age = {age} function = {ClickMe} />
         <SecondUser name = {name} age = {age} function = {add} /> 
