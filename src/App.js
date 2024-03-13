@@ -2,7 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import { User, SecondUser } from './User';
 
+const ClickMe = () => {
+  console.log("I got clicked")
+}
+
 function App() {
+  const name = "George"
+  const age = 40
   return (
     <div className="App">
       <header className="App-header">
@@ -16,10 +22,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React here
         </a>
-        <User />
-        <SecondUser />
+        <User name = {name} age = {age} function = {ClickMe} />
+        <SecondUser name = {name} age = {age} />
       </header>
     </div>
   );

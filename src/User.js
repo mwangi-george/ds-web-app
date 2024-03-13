@@ -1,12 +1,21 @@
-function User(){
+function User(props){
+  console.log(props)
   return (
-    <h1> User data here!</h1>
+    <div>
+      <h4> Name: {props.name} Age: {props.age} <button onClick={props.function}> ClickMe </button> </h4>
+      <p> {props.name} is amazing! </p>
+    </div>
+    
   );
 }
 
-function SecondUser(){
+function SecondUser(props){
   return(
-    <h1>Second user here</h1>
+    <div>
+      <p>
+        {props.name} will be {props.age + 1} years old next year
+      </p>
+    </div>
   );
 }
 
