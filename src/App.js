@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { User, SecondUser } from './User';
+import { User, SecondUser, ThirdUser } from './User';
 
 const ClickMe = () => {
   console.log("I got clicked")
@@ -33,6 +33,7 @@ function App() {
         </a>
         <User name = {name} age = {age} function = {ClickMe} />
         <SecondUser name = {name} age = {age} function = {add} />
+        <ThirdUser />
       </header>
     </div>
   );

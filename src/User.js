@@ -1,5 +1,7 @@
+import { useState } from "react";
+
 function User(props){
-  console.log(props)
+  console.log(props);
   return (
     <div>
       <h4> Name: {props.name} Age: {props.age} <button onClick={props.function}> ClickMe </button> </h4>
@@ -20,4 +22,24 @@ function SecondUser(props){
   );
 }
 
-export { User, SecondUser };
+function ThirdUser(){
+  // initialise state
+  const [counter, setCounter] = useState(0);
+
+  // function to update state
+  const increment = () => {
+    setCounter(counter + 1)
+  }
+
+  console.log(counter)
+
+  // component output
+  return (
+    <div>
+      <button onClick={increment}>Click Me</button>
+      <p> You have clicked the button {counter} times</p>
+    </div>
+  )
+}
+
+export { User, SecondUser, ThirdUser };
