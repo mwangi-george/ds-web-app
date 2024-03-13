@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// Component 1
 function User(props){
   console.log(props);
   return (
@@ -11,6 +12,7 @@ function User(props){
   );
 }
 
+// Component 2
 function SecondUser(props){
   return(
     <div>
@@ -22,6 +24,8 @@ function SecondUser(props){
   );
 }
 
+
+// Component 3 with state management
 function ThirdUser(){
   // initialise state
   const [counter, setCounter] = useState(0);
