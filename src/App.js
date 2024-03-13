@@ -18,7 +18,7 @@ function App() {
         >
           Learn React
         </a>
-        <User />7
+        <User />
       </header>
     </div>
   );
