@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { User, SecondUser, ThirdUser } from './User';
+import Form from './Form';
 
 const ClickMe = () => {
   console.log("I got clicked")
@@ -31,9 +32,10 @@ function App() {
         >
           Learn React here
         </a>
-        <User name = {name} age = {age} function = {ClickMe} />
-        <SecondUser name = {name} age = {age} function = {add} />
-        <ThirdUser />
+        <Form />
+        {/* <User name = {name} age = {age} function = {ClickMe} />
+        <SecondUser name = {name} age = {age} function = {add} /> 
+        <ThirdUser /> */}
       </header>
     </div>
   );
