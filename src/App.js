@@ -6,6 +6,13 @@ const ClickMe = () => {
   console.log("I got clicked")
 }
 
+const add = () => {
+  AgeNew = 4 + 5
+  console.log(AgeNew);
+  return AgeNew
+};
+
+
 function App() {
   const name = "George"
   const age = 40
@@ -25,7 +32,7 @@ function App() {
           Learn React here
         </a>
         <User name = {name} age = {age} function = {ClickMe} />
-        <SecondUser name = {name} age = {age} />
+        <SecondUser name = {name} age = {age} function = {add} />
       </header>
     </div>
   );

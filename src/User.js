@@ -14,6 +14,7 @@ function SecondUser(props){
     <div>
       <p>
         {props.name} will be {props.age + 1} years old next year
+        <button onClick={props.function}>Add</button>
       </p>
     </div>
   );
