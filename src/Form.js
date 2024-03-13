@@ -23,7 +23,7 @@ function Form(){
     console.log("field is " + name + " and value is " + value);
 
     // maintain the structure of the state
-    setForm({...form, "name": value})
+    setForm({...form, [name]: value})
 
   }
   
@@ -31,6 +31,7 @@ function Form(){
   return(
     <form onSubmit={handleSubmit}>
       <input type="text" name="name" onChange={onChange} placeholder="First Name"></input>
+      <input type="text" name="email" onChange={onChange} placeholder="Email"></input>
       <button type="submit"> Submit Form</button>
     </form>
   );
